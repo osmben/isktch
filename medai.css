@@ -1,0 +1,284 @@
+
+@media (max-width:1141px){
+    .max-width{
+        padding :0 0;
+    }
+    .holder{
+        background-position: right;
+     }
+     .about-content{
+        flex-direction: column;
+     }
+     .left{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .about .left img{
+        width: 350px;
+        height: 350px;
+    }
+    .right{
+        width: 70%;
+        margin-bottom: 30px;
+
+    }
+    .about .right  p{
+        width: 100%;
+    }
+    .services-content{
+        justify-content: space-evenly;
+        
+    }
+    .services{
+        background: #000;
+        height: 35rem;
+    }
+    .skill-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .skill .left{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .skill .left a{
+        margin-bottom: 40px;
+       width: 10rem;
+       text-align: center;
+
+    }
+    .skill .right{
+        width: 87%;
+    }
+    .contact .left{
+        display: block;
+    }
+}
+@media screen and (max-width:947px){
+    .icon{
+        display: block;
+        color: #fff;
+        z-index: 9999;
+    }
+    .max-width{
+        padding :0 10px;
+    }
+    .navbar{
+      position: absolute;
+      top: 69px;
+      left: -100%;
+      border-top:2px solid #fff;
+      background: #c62124;
+      height: auto;
+      text-align:center;
+     width: 100%;
+    }
+    header input[type="checkbox"]:checked + .navbar{
+        left: 0;
+    }
+    .navbar.active{
+        left: 0;
+
+    }
+    .navbar a{
+        display: block;
+        margin: 20px 0;
+        font-size: 22px;
+    }
+    .navbar a:hover::before{
+        width: 7%;
+    }
+    .navbar a::before{
+        top:40px
+    }
+    .holder{
+        background-position:right;
+    }
+    .home .home-content .text-1{
+        font-size: 35px;
+    
+    }
+        
+    .home .home-content .text-2{
+        font-size: 70px;
+    
+    }
+    .home .home-content .text-3{
+        font-size: 40px;
+    }
+    .right{
+        width: 70%;
+        margin-bottom: 30px;
+
+    }
+    .services-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    
+    .services{
+        background: #000;
+        height: 70rem;
+    }
+
+    .team{
+        background: #000;
+        height: 100rem;
+    }
+    .team .carousel{
+        flex-direction: column;
+    }
+    .team .card{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .contact .left{
+        display: block;
+    }
+    .contact .left{
+        display: block;
+        width: 100%;
+    }
+    .contact .max-width{
+         max-width: 1300px;
+        padding :0 20px;
+        margin: 0;
+    }
+    .contact-content{
+        justify-content: flex-start;
+    }
+    .contact p{
+        line-height: 1.4;
+        font-weight:500;
+        text-align: justify;
+        margin-bottom: 12px;
+    }
+    .contact .right{
+        margin-bottom: 117px;
+         padding-left:0px;
+         width: 100%;
+     }
+     .contact .inputs-conatct #main,
+     .contact .inputs-conatct #name,
+     .contact .inputs-conatct #sub,
+     .contact .inputs-conatct #textarea
+     {
+        width: 99%;
+     }
+     .contact .inputs-conatct #main,
+     .contact .inputs-conatct #name{
+        margin-right: 12px;
+
+     }
+     
+}   
+
+@media (max-width:690px){
+    .home .home-content .text-2{
+        font-size: 65px;
+    
+    }
+     .about .left img{
+        width: 500px;
+        height: 500px;
+    }
+   
+    .about-content{
+       flex-direction: column;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+
+    .max-width{
+        padding :0 -10px;
+    }
+    .holder{
+        background-position: right;
+     }
+     .right{
+        width: 70%;
+        margin-bottom: 30px;
+
+    }
+    .services{
+        background: #000;
+        height: 84rem;
+    }
+    .card{
+        width:90%;  
+    }
+    .skill .left p{
+        text-align: justify;
+    }
+    .skill .left {
+        width: 94%;
+    }
+    .skill .right{
+        width: 93%;
+    }
+    .team .card{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+   
+}
+
+@media (max-width:500px){
+    .home .home-content .text-2{
+        font-size:60px;
+    
+    }
+    .about .left img{
+        width: 400px;
+        height: 400px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content .text-1{
+        font-size: 30px;
+    }
+    .home-content{
+        margin-left:-20px;
+    }
+    .about .right  {
+        width: 100%;
+        padding:10px;
+        margin-bottom: 30px;
+    }
+    .services{
+        background: #000;
+        height: 85rem;
+    }
+    .card{
+        width:90%;  
+    }
+    
+    .skill .left p{
+        text-align: justify;
+        width: 100%;
+    }
+    .skill .right{
+        width: 100%;
+    }
+    .team .card{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .column .flex{
+        display: block;
+    }
+     
+}
+
+

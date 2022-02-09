@@ -1,0 +1,665 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth; 
+
+}
+
+/*------------- btn that takes you from the bottom to the top------------------------- */
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background:crimson;
+    right: 30px;
+    bottom: 30px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 7px; 
+    z-index: 9999;
+    font-size: 30px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.scroll-up-btn a{
+    color: #fff;
+    padding: 12px;
+
+}
+
+
+
+/* header styles */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 5%;
+    font-family: 'ubuntu',sans-serif;
+    background: #c62124;
+  position: absolute;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+}
+
+header .logo h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+header .logo span{
+    color: #fff;
+}
+
+.navbar{
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition:all 0.3s ease;
+  
+ 
+}
+.navbar.sticky{
+    background: red;
+}
+.navbar a{
+    color: #fff;
+    padding: 12px 10px;
+    position: relative;
+    transition: ease .4s ;
+
+}
+.navbar a::before{
+    content: "";
+    position: absolute;
+    top:33px;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: ease .4s ;
+
+}
+
+.navbar a:hover::before{
+    width: 80%;
+
+}
+.navbar a:hover{
+    opacity:0.6;
+}
+/* menu-btn styling */
+.icon{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
+}
+/* home section styling */
+
+.max-width{
+    max-width: 1300px;
+    padding :0 80px;
+    margin: auto;
+}
+ .home{
+    display: flex;
+   color: #fff;
+    min-height: 500px;
+}
+.holder{
+    background: url("images/1.jpg")no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: 6% -143%;
+    /* background-attachment: fixed; */
+}
+
+.home .max-width{
+    margin: 20rem 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    text-transform: capitalize;
+    color: crimson;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 2px 0;
+}
+
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 600;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.home-content a{
+    padding: 14px 36px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: crimson;
+    border-radius: 5px;
+    transition: background .3s ease;
+}
+
+.home-content a:hover{
+    background: none;
+    transition: background .3s ease-in-out;
+}
+
+
+/* about section is just start */
+.about{
+    font-family:'Poppins',sans-serif;
+}
+ .title{
+     text-align:center;
+     padding:100px 0 20px 0;
+     font-size:40px;
+     margin-bottom:60px;
+     font-weight:500;
+     font-family:arial,sans-serif;
+     position:relative;
+    text-transform: capitalize;
+ }
+ .team .title::after,   
+ .services .title::after{
+    content:'what i provide';
+    background: #000;
+}
+.team .title,
+.services .title{
+    color: #fff;
+}
+.team .title::before,   
+.services .title::before{
+    background: #fff;
+}
+ /* here is all the simelar codes */
+.title::before{
+    content:'';
+    position:absolute;
+    width:180px;
+    height:3px;
+    background:#111;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%)
+}
+
+.title::after{
+    content:'who i am';
+    position:absolute;
+   /* padding:5px; */
+    background:#fff;
+    color:crimson;
+    font-weight: 600;
+    font-size:20px;
+    bottom:-7px;
+    left:50%;
+    transform:translateX(-50%)
+}
+.left img{
+    width:400px;
+    height:500px;
+    object-fit:cover;
+    border-radius:10px ;
+}
+.left{
+    width: 45%;
+    margin-bottom: 40px;
+}
+.right{
+    width: 55%;
+}
+.contact-content,
+.about-content,
+.skill-content,
+.services-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+.about .right .text{
+    font-size:22px ;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.about .right .text span{
+    color: crimson;
+}
+.about .right  p{
+    letter-spacing:1px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about .right a{
+    padding: 12px 20px;
+    border: 2px crimson solid;
+    color: crimson;
+    border-radius: 6px;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+.about .right a:hover{
+    background: crimson;
+    color: #fff;
+}
+
+/* ----------------here is the services section is just started------------------ */
+.team,
+.services{
+    background: #000;
+    height:44rem
+}
+
+
+ .card{
+    color: #fff;
+    text-align: center;
+    width: 30%;
+    background: #222;
+    box-shadow:0 7px 32px rgb(0 0 0 / 50%);
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: all .3s ease;
+}
+
+ .card:hover{
+    background:#c62124;
+    transform: scale(1.05);
+    color: #fff;
+}
+.card:hover i{
+    color: #fff;
+}
+.card i{
+    color: crimson;
+    font-size: 50px;
+    margin:14px 0;
+    transition: all .3s ease;
+
+}
+
+.card .card-title{
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.card .card-desc{
+    line-height: 1.4;
+    padding: 0 12px; 
+    margin-bottom: 30px;
+
+}
+/* here is the skills section is just starts */
+
+.skill .title::after{
+    content:'what i know';
+}
+
+.skill .column{
+    /* text-align: justify; */
+}
+.skill .right{
+    width: 50%;
+    margin-top: -30px;
+}
+
+.skill .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    
+}
+.skill p{
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+.skill .left a{
+    padding: 11px 16px;
+    border: 2px solid crimson;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: crimson;
+    border-radius: 5px;
+    transition: all.3s ease;
+}
+.skill .left a:hover{
+    background: none;
+    color: crimson;
+}
+
+.skill .right .bars{
+    margin-bottom: 17px;
+}
+
+.skill .right .info{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill .right .info span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skill .right .bars .line{
+    width: 100%;
+    height:5px;
+    background: #888;
+    position: relative;
+}
+.skill .right .bars .line::before{
+    content: "";
+    position: absolute;
+    background: crimson;
+    width: 90%;
+    height: 100%;
+    left: 0;
+}
+.skill .right .bars .html::before{
+    width: 90%;
+
+}
+.skill .right .bars .css::before{
+    width: 60%;
+
+}
+.skill .right .bars .js::before{
+    width: 40%;
+
+}
+.skill .right .bars .php::before{
+    width: 30%;
+
+}
+.skill .right .bars .mysql::before{
+    width: 44%;
+
+}
+
+/*------ here is the team section is started -----*/
+
+
+.team .title::after{
+    content:'who i work with';
+}
+.team .carousel .box{
+   animation: animated-gradient 2s linear infinite ;
+   background: linear-gradient(100deg,rgb(190, 19, 19),rgb(26, 172, 159));
+    background-size: 200% 200%;
+    border-radius: 50%;
+    padding:8px;         
+    display:inline-block;
+    background-position: right;
+    margin-bottom:20px;
+}
+
+.team .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius:50% ;
+  
+   
+}
+
+@keyframes animated-gradient {
+    0%{
+        background-position:top left;
+    }
+    25%{
+        background-position:top right;
+
+    }
+    75%{
+        background-position:bottom left;
+
+    }
+    100%{
+        background-position:bottom right;
+
+    }
+}
+
+.team .carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.team .bottom .text{
+    font-size: 20px;
+    font-weight:600px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.team .bottom  p{
+    font-size:16px;
+    text-transform:capitalize;
+}
+
+.team .bottom .icons i{
+    margin-right:10px;
+    font-size: 40px;
+}
+.team .bottom .icons i:hover{
+    color: crimson;
+    transform: scale(1.05);
+}
+.card:hover .icons{
+    color:none;
+}
+
+.team .card{
+    color: #fff;
+    text-align: center;
+    width: 30%;
+    background: #222;
+    box-shadow:0 7px 32px rgb(0 0 0 / 50%);
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: all .3s ease;
+    object-fit: cover;
+}
+.team .card:hover{
+    transform: scale(1.05);
+    color: #fff;
+    border: crimson 2px solid;
+}
+
+.team .bottom a{
+    border: 1px solid crimson;
+    background: linear-gradient(10deg ,rgb(199, 185, 185),rgb(243, 7, 7));
+    animation: animated 2s linear infinite;
+    background-size:200% 200%;
+    padding: 9px 50px;
+    display: inline-block;
+    background-position:right ;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: capitalize;
+    transition: background .3s ease;
+}
+.team .bottom a:hover{
+    background: transparent;
+
+}
+
+@keyframes animated {
+    20%{
+        background-position:top left;
+    }
+
+    40%{
+        background-position:top right;
+    }
+    60%{
+        background-position:bottom right;
+    }
+    100%{
+        background-position:bottom left;
+    }
+} 
+/*------------ here is the get on touch section ------------------- */
+
+.contact .title::after{
+    content: 'get in touch';
+}
+
+.contact .small-title{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize ;
+    margin-bottom: 14px;
+}
+.contact p{
+    line-height: 1.4;
+    font-weight:500;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+.contact .palces{
+    padding: 10px 0  0 30px;
+}
+.contact .palces i{
+    position: relative;
+    left: -30px;
+    bottom:-22px;
+    font-size: 23px;
+}
+
+
+
+.palces{
+    display: block;    
+}
+.contact .right{
+   margin-bottom: 117px;
+    padding-left: 30px;
+}
+.contact .inputs-conatct #main,
+.contact .inputs-conatct #name{
+    width:44%;
+    height:45px;
+    outline: none;
+    margin-right: 10px;
+    border: 1px rgb(155, 155, 155) solid;
+    border-radius: 5px;
+    padding-left: 8px;
+    font-size:16px ;
+    font-family: 'Ebrima',sans-serif;
+    margin-bottom: 14px;
+}
+.flex{
+    display: flex;
+        
+}
+
+.contact .inputs-conatct #sub{
+    width:90%;
+    height:45px;
+    outline: none;
+    margin-right: 10px;
+    border: 1px rgb(155, 155, 155) solid;
+    border-radius: 5px;
+    padding-left: 8px;
+    font-size:16px ;
+    font-family: 'Ebrima',sans-serif;
+    margin-bottom: 14px;
+}
+
+.contact .inputs-conatct #textarea{
+    width:90%;
+    height:100px;
+    outline: none;
+    margin-right: 10px;
+    border: 1px rgb(155, 155, 155) solid;
+    border-radius: 5px;
+    padding-left: 8px;
+    font-size:16px ;
+    font-family: 'Ebrima',sans-serif;
+    resize: none;
+    margin-bottom: 29px;
+}
+.contact .column a{
+    padding: 11px 20px;
+    border: 2px solid crimson;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: crimson;
+    border-radius: 5px;
+    transition: all.3s ease;
+}
+.contact .column a:hover{
+    background: none;
+    color: crimson;
+}
+
+
+
+/* --------here is the footer section--------------- */
+
+
+.footer{
+    width:100%;
+    height:50px;
+    background:#000;
+    color: #fff;
+
+}
+
+.footer-content{
+    text-align:center;
+    padding-top:20px ;
+}
+
+.footer-content span{
+    color:crimson;
+}
+/* here is the media query is starts */
+
